@@ -7,7 +7,7 @@ spring:
         git:
           default-label: config-server
           uri: https://github.com/salvadorEstrada/rTemplateAndFeign
-          search-path: config-data
+          search-paths: config-data
   application:
     name: config-service
 
