@@ -1,13 +1,13 @@
 server:
-  port: 8081
+  port: 8081 #puerto al qu se van a comunicar los microservice
 spring:
   cloud:
     config:
       server:
         git:
-          default-label: config-server
-          uri: https://github.com/salvadorEstrada/rTemplateAndFeign
-          search-paths: config-data
+          default-label: eureka #rama en github
+          uri: https://github.com/salvadorEstrada/rTemplateAndFeign #ubicacion del repositorio
+          search-paths: config-data #busca los datos de los microservicios p.e puerto
   application:
     name: config-service
 
