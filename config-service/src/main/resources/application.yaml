@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          default-label: eureka #rama en github
+          default-label: multiple-instances #rama en github
           uri: https://github.com/salvadorEstrada/rTemplateAndFeign #ubicacion del repositorio
           search-paths: config-data #busca los datos de los microservicios p.e puerto
   application:
