@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 //Aqui se hace la comunicación entre user-service y bike-service
-@FeignClient(name="bike-service", url="http://localhost:8003")
+//@FeignClient(name="bike-service", url="http://localhost:8003")
+//Cuando se incluye eureka server ya no es necesario especificar la url
+@FeignClient(name="bike-service")
 @RequestMapping("/bike")
 public interface BikeFeignClient {
     @PostMapping()
